@@ -6,7 +6,7 @@ export const Location = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const isTablet = useMediaQuery("(min-width: 768px) and (max-width: 1024px)");
 
-  const words = `We beautify everywhere we go`;
+  const words = `Some delivery Locations`;
 
   return (
       <div className={`2xl:px-10 lg:px-10 2xl:ml-10 lg:ml-10 pb-44 bg-white/95 h-full ${!isDesktop && 'px-2 -ml-2 mt-10'}  ${isTablet && 'px-10 mt-10'}`}>

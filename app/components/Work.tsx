@@ -23,11 +23,10 @@ const Work = () => {
       <div className="flex flex-col w-full gap-4 leading-10 text-center uppercase md:text-left">
         <h2 className="font-semibold text-white text-md">What we do</h2>
         <h1 className="text-3xl font-bold md:text-4xl text-white/85 leading-relax workHeading">
-          We know the <Highlight className="text-black dark:text-black">  ins and outs </Highlight> of luxurious buildings
+          We know the <Highlight className="text-black dark:text-black">  ins and outs </Highlight> of petroleum products
         </h1>
         <div className='bg-black p-2 rounded-full lg:w-[54%] 2xl:w-[37%] shadow-lg'>
-        <p className="text-[#CC5500] "> And it shows in our magnificent edifices ALL over the big city of Lagos 
-        
+        <p className="text-[#CC5500] "> So you are assured of excellent product delivery nationwide
 </p>
 </div>
       </div>
@@ -45,8 +44,8 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Design</h3>
-      <span className="text-sm text-white/80 workFontP">Architectural designs</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Distribution</h3>
+      <span className="text-sm text-white/80 workFontP">Distribution and wholesale supply of petroleum products.</span>
     </div>
   </div>
 
@@ -60,8 +59,8 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Construction</h3>
-      <span className="text-sm text-white/80 workFontP">Capable construction engineers</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Supply</h3>
+      <span className="text-sm text-white/80 workFontP">Premium Motor Spirit (PMS) (Petrol)<br/> Automotive Gas Oil (AGO) (Diesel) <br/> Dual Purpose Kerosene (DPK) (Kerosene) <br/> Liquefied Petroleum Gas (LPG)</span>
     </div>
   </div>
 
@@ -77,8 +76,8 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Interior decoration</h3>
-      <span className="text-sm text-white/80 workFontP">Stylish and luxurious interiors to suite your rich taste</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Bulk delivery</h3>
+      <span className="text-sm text-white/80 workFontP">Bulk fuel delivery to filling stations, industries, factories, hotels, and commercial organizations.</span>
     </div>
   </div>
 
@@ -94,8 +93,8 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Project Management</h3>
-      <span className="text-sm text-white/80 workFontP">Sleep, rest assured your project is in safe hands</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Haulage</h3>
+      <span className="text-sm text-white/80 workFontP">Petroleum product haulage using certified tanker trucks.</span>
     </div>
   </div>
 
@@ -110,8 +109,8 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Property Valuation</h3>
-      <span className="text-sm text-white/80 workFontP">Know the current worth of your properties</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Supply Contracts</h3>
+      <span className="text-sm text-white/80 workFontP">Fuel supply contracts for government agencies, corporate organizations, and private</span>
     </div>
   </div>
 
@@ -126,8 +125,8 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Property Marketing</h3>
-      <span className="text-sm text-white/80 workFontP">Sell your properties quicker</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Fuel Storage</h3>
+      <span className="text-sm text-white/80 workFontP">Fuel storage and inventory management solutions.</span>
     </div>
   </div>
 

@@ -124,66 +124,13 @@ export const NAVLINKS = [
       
        
 
-         {
-          id:2,
-          label: "Completed",
-          route: "#",
-          icon: "https://img.icons8.com/?size=100&id=60641&format=png&color=000000",
-          productItems: [
-            {
-              title: "Engineering Laboratory University project",
-              href: `/property/osun-project`,
-              src: "/assets/completed/admin/89.jpg",
-              description: "Check out educational projects",
-              route:"/property-type/educational"
-            },
-            {
-              title: "Western gate supermarket",
-              href: "/property/west-gate-supermarket-and-pharmacy",
-              src: "/assets/completed/Westgate.png",
-              description:
-                "Check out shopping projects",
-              route:"/property-type/shopping"
-            },
-            {
-              title: "Ikoyi project",
-              href: "/property/lascofedd-project",
-              src: "/assets/completed/commercial/Lascofedd.jpg",
-              description: "Check out commercial/office projects.",
-              route:"/property-type/commercial"
-            },
-            {
-              title: "Orimolade project",
-              href: "/property/orimolade-project",
-              src: "/assets/completed/New Orimolad.jpg",
-              route:"/property-type/shopping",
-              description:
-                "Check out residential projects",
-            },
-          ],
-        },
-
       
       
     
    
 
-    {
-      id:3,
-      label: "Services",
-      route: "/services",
-      icon: "https://img.icons8.com/?size=100&id=59992&format=png&color=000000",
-     
-      
-    },
-    {
-      id:4,
-      label: "Properties",
-      route: "/projects",
-      icon: "https://img.icons8.com/?size=100&id=61091&format=png&color=000000",
-      
-    },
-    
+
+
 
     {
       id:4,
@@ -589,80 +536,14 @@ export const NAVLINKS = [
         href:"/services"
       },
 
-      {
-        id:2,
-        label:"Properties",
-        href:"/projects"
-      },
 
-      {
-        id:3,
-        label:"Privacy policy",
-        href:"/privacy-policy"
-      },
+
     ]
 
      
     },
 
-    {
-      id:2,
-      "title":"Featured",
-      "subTitle":[
-        {
-          id:1,
-          label:"Hallmark",
-          href:"/property/hallmark-university-projects-"
-          
-        },
-        {
-          id:2,
-          label:"West gate",
-          href:"/property/west-gate-supermarket-and-pharmacy"
-        },
-        {
-          id:3,
-          label:"Iyana ipaja",
-          href:"/property/5-bedroom-duplex"
-        },
-        {
-          id:4,
-          label:"Ikorodu",
-          href:"/property/ikorodu-project"
-        },
-      ]
-    },
-    {
-      id:3,
-      "title":"Explore",
-      "subTitle":[
-       
-        {
-          id:1,
-          label:"Residentials",
-          href:"/property-type/residentials"
-        },
-        {
-          id:2,
-          label:"Commercials",
-          href:"/property-type/commercial"
-        },
 
-        {
-          id:3,
-          label:"Shopping",
-          href:"/property-type/shopping"
-        },
-        {
-          id:4,
-          label:"Admins",
-          href:"/property-type/educational"
-        },
-       
-       
-       
-      ]
-    },
 
 
    

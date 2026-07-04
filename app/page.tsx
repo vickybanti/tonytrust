@@ -1,16 +1,16 @@
-import {Hero} from "./components/Hero";
 import {Socials} from "./components/Socials"
-import {Location} from "./components/Location"
 import Work from "./components/Work"
+import {HeroCarousel} from "@/app/components/HeroCarousel";
+import Ceo from "@/app/components/Ceo";
 
 export default function Home() {
   return (
     
-            <main className="bg-white">
+            <main>
 
-      <Hero />
+    <HeroCarousel />
       <Socials />
-      <Location />
+      <Ceo />
       <Work />
       </main>
 

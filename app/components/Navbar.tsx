@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React,{useEffect, useState} from "react";
 import { ProductItem } from "./ui/NavbarMenu";
 import Link from "next/link";
 import Image from "next/image";
@@ -21,10 +21,8 @@ import {
 
 export function Navbar() {
   const isDesktop = useMediaQuery("(min-width: 780px)");
-  
 
-
-  return isDesktop ? (
+        return isDesktop ? (
     <div className="relative w-full">
       <DesktopNavbar />
     </div>
@@ -38,23 +36,42 @@ export function Navbar() {
 
 function DesktopNavbar() {
   const pathname = usePathname();
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 500);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
 
-  console.log(NAVLINKS); // Debugging log to verify NAVLINKS
 
   return (
-    <div className="fixed top-0 z-50 w-full bg-white shadow-sm dark:bg-white">
+    <div className={`fixed top-0 z-50 w-full bg-background shadow-sm transition-all duration-300 ${
+        scrolled
+          ? "bg-white shadow-md py-4"
+          : "bg-transparent py-6"
+      }`}>
       <motion.div 
        initial={{ x: -30, opacity: 0.2 }}
        animate={{ x: 0, opacity: 1 }}
        transition={{ ease: "easeInOut", duration: 1.5 }}
        whileInView={{ opacity: 1 }}
        viewport={{ once: false }}
-      className="flex items-center justify-between w-full px-14 py-4">
+      className="flex items-center justify-between w-full px-14 top-0 bg-transparent">
         {/* Logo */}
-        <div className="top-0 left-0 ml-5 flex items-center">
+        <div className="top-0 left-0 ml-5 flex items-center w-full">
         <Link href="/">
-        <Image src="/assets/logo/logo1.jpg" width={100} height={50} alt="logo" className="object-contain" />
+                <h3 className={"flex text-4xl"}>
+                    <span className={"font-bold text-[#CC5500]"}>T</span>
+                    <span className={"font-bold text-blue-900"}>S</span>
+                    <span className={"font-bold text-blue-900"}>T</span>
+                </h3>
+
        </Link>
         </div>
 
@@ -67,42 +84,24 @@ function DesktopNavbar() {
         <NavigationMenuList className="relative z-10">
           <NavigationMenuItem
             className={`relative px-3 py-3 overflow-hidden transition-all duration-700 ${
-              isActive
-                ? "inset-0 bg-gradient-to-b from-[#CC5500] to-white text-black"
-                : "bg-white text-[#CC5500] group"
+                isActive
+                    ? "inset-0 bg-gradient-to-b from-[#CC5500] to-white text-black"
+                    : `transition-all duration-300 ${
+                        scrolled
+                            ? "bg-white shadow-md py-4 text-[#CC5500] group"
+                            : "bg-transparent py-6 text-white font-semibold"
+                    }`
             }`}
+
           >
             {/* Background Gradient Overlay */}
             <span className="absolute inset-0 bg-gradient-to-b from-[#CC5500] to-white scale-y-0 origin-top transition-transform duration-700 group-hover:scale-y-100"></span>
 
             {/* If there are product items, show dropdown, else just a link */}
-            {link.productItems && link.productItems.length > 0 ? (
-              <>
-                <NavigationMenuTrigger className="relative z-10 flex hover:text-[#CC5500] hover:bg-transparent ">
-                  {link.label}
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <div className="text-sm grid grid-cols-2 gap-10 p-[10px] w-auto min-w-[650px] max-w-fit bg-white border-none ">
-                    {link.productItems.map((prod) => (
-                      <NavigationMenuLink key={prod.title} href={link.route}>
-                        <div>
-                          <ProductItem
-                            title={prod.title}
-                            href={prod.href}
-                            src={prod.src}
-                            description={prod.description}
-                          />
-                        </div>
-                      </NavigationMenuLink>
-                    ))}
-                  </div>
-                </NavigationMenuContent>
-              </>
-            ) : (
+
               <NavigationMenuLink href={link.route} className="relative z-10">
                 {link.label}
               </NavigationMenuLink>
-            )}
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>

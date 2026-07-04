@@ -43,49 +43,28 @@ const Page = () => {
           text:""
         },
       })
-    function onSubmit(values: z.infer<typeof formSchema>) {
-      setLoading(true)
+    const onSubmit = async () => {
+        if (!ref.current) return;
 
-      emailjs.init({
-        publicKey: 'U2D7hh_TfmUqWH5qi',
-        // Do not allow headless browsers
-        blockHeadless: true,
-        blockList: {
-          // Block the suspended emails
-          list: ['foo@emailjs.com', 'bar@emailjs.com'],
-          // The variable contains the email address
-          watchVariable: 'userEmail',
-        },
-        limitRate: {
-          // Set the limit rate for the application
-          id: 'app',
-          // Allow 1 request per 10s
-          throttle: 10000,
-        },
-      });
+        setLoading(true);
+        setSuccess("");
 
-              if (ref.current) {
-                emailjs.sendForm(
-                  "service_y8uzxz9",
-                  "template_5yyxifj",
-                  ref.current,
-                  "U2D7hh_TfmUqWH5qi"
-                ).then(
-                  () => {
-                    setSuccess("Message sent successfully");
-                  },
-                  (error) => {
-                    setSuccess(error.text);
-                  }
-                );
-              }
-              setLoading(false)
-            
-                
-             
-          
-    console.log(values)
-  }
+        try {
+            await emailjs.sendForm(
+                "service_effk34a",
+                "template_5yyxifj",
+                ref.current,
+                "U2D7hh_TfmUqWH5qi"
+            );
+
+            setSuccess("Message sent successfully");
+            form.reset();
+        } catch (error:unknown) {
+            setSuccess("Failed to send message.");
+        } finally {
+            setLoading(false);
+        }
+    };
 
   return (
     <motion.div 

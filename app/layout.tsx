@@ -16,8 +16,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Prolinks - Architectural Excellence.",
-  description: "Architecture. Engineering. Construction.",
+  title: "Tony Sedi Trust Nigeria Limited",
+  description: "AGO. PMS. LPG.",
 };
 
 export default function RootLayout({
