@@ -60,6 +60,7 @@ const Page = () => {
             setSuccess("Message sent successfully");
             form.reset();
         } catch (error:unknown) {
+            console.error(error)
             setSuccess("Failed to send message.");
         } finally {
             setLoading(false);
