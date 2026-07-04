@@ -3,18 +3,14 @@
 import React, {useEffect, useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "../hooks/use-media-query";
 import { NAVLINKS } from "../constants";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuPortal,
   DropdownMenuSeparator,
   DropdownMenuSub,
-  DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
   DropdownMenuLabel,
@@ -22,7 +18,6 @@ import {
 } from "./ui/dropdown-menu";
 
 const MobileNav = () => {
-  const pathname = usePathname();
   const isDesktop = useMediaQuery("(min-width: 414px)");
   const [isMenuOpen, setMenuOpen] = useState(false);
 

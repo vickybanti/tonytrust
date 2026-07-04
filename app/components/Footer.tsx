@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from "react";
+import React from "react";
 import { Meteors } from "./ui/meteors";
 import { useMediaQuery } from "../hooks/use-media-query";
 import Link from "next/link";

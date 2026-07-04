@@ -1,8 +1,6 @@
 "use client";
 import React,{useEffect, useState} from "react";
-import { ProductItem } from "./ui/NavbarMenu";
 import Link from "next/link";
-import Image from "next/image";
 import { useMediaQuery } from "../hooks/use-media-query";
 import MobileNav from "./MobileNav";
 import { NAVLINKS } from "../constants";
@@ -10,11 +8,9 @@ import { usePathname } from "next/navigation";
 import {motion} from 'framer-motion'
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "./ui/navigation-menu"
 
 
