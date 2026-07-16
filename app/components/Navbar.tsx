@@ -1,8 +1,6 @@
 "use client";
 import React,{useEffect, useState} from "react";
 import Link from "next/link";
-import { useMediaQuery } from "../hooks/use-media-query";
-import MobileNav from "./MobileNav";
 import { NAVLINKS } from "../constants";
 import { usePathname } from "next/navigation";
 import {motion} from 'framer-motion'
@@ -16,15 +14,12 @@ import {
 
 
 export function Navbar() {
-  const isDesktop = useMediaQuery("(min-width: 780px)");
 
-        return isDesktop ? (
+        return (
     <div className="relative w-full">
       <DesktopNavbar />
     </div>
-  ) : (
-    <MobileNav />
-  );
+  )
 }
 
 

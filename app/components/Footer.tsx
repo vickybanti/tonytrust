@@ -83,9 +83,9 @@ Road 9, Funbi Fagun Ondo, Ondo State
            width="32px"
            height="2px"
            className="object-contain"/>
-           <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-[#CC5500] hover:underline">
-  tundeadekola@yahoo.com
-</a>
+           <a href="mailto:info@tonyseditrust.com" className="p-3 text-sm text-[#CC5500] hover:underline">
+               info@tonyseditrust.com
+           </a>
 
             </div>
           </div>
