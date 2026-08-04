@@ -60,7 +60,7 @@ const Footer = () => {
   rel="noopener noreferrer"
   className="p-3 text-sm text-[#CC5500] hover:underline"
 >
-Road 9, Funbi Fagun Ondo, Ondo State
+Agbogbo oke, Yaba Opposite UBA bank Ondo city
 </a>
             </div>
             <div className="flex items-center">
@@ -70,7 +70,7 @@ Road 9, Funbi Fagun Ondo, Ondo State
               height="2px"
               className="object-contain"/>
             <a 
-  href="tel:08033029830" 
+  href="tel:08037621134"
  className="p-3 text-sm text-[#CC5500] hover:underline">
   08037621134
 </a>
