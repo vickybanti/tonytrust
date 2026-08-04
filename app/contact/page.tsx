@@ -99,30 +99,29 @@ const Page = () => {
            width="32px"
            height="2px"
            className="object-contain"/>
-           <a 
-  href="https://www.google.com/maps/search/?api=1&query=13,+Dayo+Kuye+Close,+New+Oko-Oba,+Abulegba,+Lagos" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="p-3 text-sm text-[#CC5500] hover:underline"
->
-13,Dayo Kuye Close <br />
-New Oko-Oba, <br />
-Abulegba,Lagos
-</a>
-            </div>
-            <div className="flex items-center">
-              
-              <img src="https://img.icons8.com/?size=100&id=12921&format=png&color=000000"
-              width="32px"
-              height="2px"
-              className="object-contain"/>
-            <a 
-  href="tel:08033029830" 
- className="p-3 text-sm text-[#CC5500] hover:underline">
-  0803-302-9830
-</a>
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Road+9,+Funbi+Fagun,+Ondo,+Ondo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 text-sm text-[#CC5500] hover:underline"
+            >
+                Agbogbo oke, Yaba Opposite UBA bank Ondo city
 
-            </div>
+            </a>
+        </div>
+                        <div className="flex items-center">
+
+                            <img src="https://img.icons8.com/?size=100&id=12921&format=png&color=000000"
+                                 width="32px"
+                                 height="2px"
+                                 className="object-contain"/>
+                            <a
+                                href="tel:08037621134"
+                                className="p-3 text-sm text-[#CC5500] hover:underline">
+                                08037621134
+                            </a>
+
+                        </div>
 
             <div className="flex items-center">
               
@@ -130,9 +129,9 @@ Abulegba,Lagos
            width="32px"
            height="2px"
            className="object-contain"/>
-           <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-[#CC5500] hover:underline">
-  tundeadekola@yahoo.com
-</a>
+                <a href="mailto:info@tonyseditrust.com" className="p-3 text-sm text-[#CC5500] hover:underline">
+                    info@tonyseditrust.com
+                </a>
 
             </div>
           </div>
