@@ -100,12 +100,12 @@ const Page = () => {
            height="2px"
            className="object-contain"/>
             <a
-                href="https://www.google.com/maps/search/?api=1&query=Road+9,+Funbi+Fagun,+Ondo,+Ondo"
+                href="https://www.google.com/maps/search/?api=1&query=30,+Olorunsola+Street,+Ondo,+Ondo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 text-sm text-[#CC5500] hover:underline"
             >
-                Agbogbo oke, Yaba Opposite UBA bank Ondo city
+                30 Olorunsola Street Ondo city
 
             </a>
         </div>
