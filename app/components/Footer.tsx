@@ -60,7 +60,7 @@ const Footer = () => {
   rel="noopener noreferrer"
   className="p-3 text-sm text-[#CC5500] hover:underline"
 >
-               30 Olorunsola Street Ondo city
+               30 Olorunsola Street, Ondo City
 </a>
             </div>
             <div className="flex items-center">
